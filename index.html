@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,.fw-brand { font-weight:700; }
 .navbar .nav-link:hover { color:var(--orange); }
 
 .club { position:absolute; border-radius:50%; background:var(--peach); z-index:0; }
+.blob { position:absolute; border-radius:50%; background:var(--peach); z-index:-1; pointer-events:none; }
 
 .activity-card { border:1px solid var(--navy); border-radius:2px; padding:1.25rem; height:100%; background:#fff; }
 .activity-card .num { font-weight:700; font-size:1.1rem; padding-bottom:.6rem; margin-bottom:.75rem; }
@@ -72,7 +73,8 @@ footer a { color:#fff; }
 <nav class="navbar navbar-expand-lg bg-white sticky-top py-3">
   <div class="container">
     <a class="navbar-brand" href="#accueil">
-      <img src="">
+      <img src="images/logo-nav.png" alt="Logo ACF2L" style="height:56px;width:auto;">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -80,15 +82,15 @@ footer a { color:#fff; }
       <ul class="navbar-nav ms-auto gap-lg-4 text-center">
         <li class="nav-item"><a class="nav-link" href="#accueil">ACCUEIL</a></li>
         <li class="nav-item"><a class="nav-link" href="#activites">NOS ACTIVITES</a></li>
-        <li class="nav-item"><a class="nav-link" href="#galerie">GALERIE</a></li>
         <li class="nav-item"><a class="nav-link" href="#categories">CATEGORIE D'ULM</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galerie">GALERIE</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<header id="accueil" class="position-relative text-white d-flex align-items-center">
+<header id="accueil" class="position-relative text-white d-flex align-items-center" style="min-height:590px; background:url('images/hero.jpg') center/cover no-repeat, var(--navy);">
     <div class="container py-5">
     <div class="row">
       <div class="col-lg-7">
@@ -162,7 +164,7 @@ footer a { color:#fff; }
       </div>
     </div>
   </div>
-  <div class="blob" style="width:300px;height:300px; right:-150px; bottom:-100px;"></div>
+  <div class="blob" style="width:800px;height:800px; right:-354px; bottom:-400px;"></div>
 </section>
 
 
@@ -182,7 +184,7 @@ footer a { color:#fff; }
     <div class="row g-4">
       <div class="col-md-4">
         <div class="ulm-card">
-          <div class="photo"><div class="bg-pendulaire"></div></div>
+          <div class="photo"><img src="images/pendulaire.png" alt="Pendulaire" class="w-100 h-100" style="object-fit:cover;display:block;"></div>
           <div class="body">
             <h5>Pendulaire</h5>
             <p>Une aile souple et un chariot suspendu : la sensation de vol la plus directe, pilotée au trapèze.</p>
@@ -195,7 +197,7 @@ footer a { color:#fff; }
       </div>
       <div class="col-md-4">
         <div class="ulm-card">
-          <img>
+          <div class="photo"><img src="images/multiaxe.png" alt="Multiaxe" class="w-100 h-100" style="object-fit:cover;display:block;"></div>
           <div class="body">
             <h5>Multiaxe</h5>
             <p>Un appareil à commandes classiques, manche et palonnier, proche du pilotage avion.</p>
@@ -208,7 +210,7 @@ footer a { color:#fff; }
       </div>
       <div class="col-md-4">
         <div class="ulm-card">
-          <img>
+          <div class="photo"><img src="images/autogire.png" alt="Autogire" class="w-100 h-100" style="object-fit:cover;display:block;"></div>
           <div class="body">
             <h5>Autogire</h5>
             <p>Un rotor libre non motorisé assure la portance : stabilité et sensations en biplace.</p>
@@ -227,8 +229,8 @@ footer a { color:#fff; }
   <div class="container">
     <div class="row align-items-start g-5">
       <div class="col-lg-6">
-          <img>
-          <img>
+          <div class="pedago-photo"><img src="images/terrain.png" alt="Vue aérienne de l'aérodrome" class="w-100 h-100" style="object-fit:cover;display:block;"></div>
+          <div class="pedago-photo small"><img src="images/salle-cours.png" alt="Salle de cours" class="w-100 h-100" style="object-fit:cover;display:block;"></div>
       </div>
       <div class="col-lg-6">
         <p class="text-orange fw-bold text-uppercase mb-1" style="letter-spacing:.05em;">Les moyens pédagogiques</p>
@@ -261,37 +263,37 @@ footer a { color:#fff; }
     <div class="row g-3">
 
       <div class="col-md-4">
-        <img src="images/galerie-1.jpg"
+        <img src="images/galerie-1.png"
              class="img-fluid w-100 rounded"
              alt="Photo de l'aéroclub">
       </div>
 
       <div class="col-md-4">
-        <img src="images/galerie-2.jpg"
+        <img src="images/galerie-2.png"
              class="img-fluid w-100 rounded"
              alt="Photo d'un ULM">
       </div>
 
       <div class="col-md-4">
-        <img src="images/galerie-3.jpg"
+        <img src="images/galerie-3.png"
              class="img-fluid w-100 rounded"
              alt="Photo du terrain">
       </div>
 
       <div class="col-md-4">
-        <img src="images/galerie-4.jpg"
+        <img src="images/galerie-4.png"
              class="img-fluid w-100 rounded"
              alt="Photo d'un vol">
       </div>
 
       <div class="col-md-4">
-        <img src="images/galerie-5.jpg"
+        <img src="images/galerie-5.png"
              class="img-fluid w-100 rounded"
              alt="Photo d'un ULM">
       </div>
 
       <div class="col-md-4">
-        <img src="images/galerie-6.jpg"
+        <img src="images/galerie-6.png"
              class="img-fluid w-100 rounded"
              alt="Photo de l'aéroclub">
       </div>
