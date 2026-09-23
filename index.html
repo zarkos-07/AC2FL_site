@@ -11,6 +11,64 @@
 </head>
 <body>
 
+<style>
+:root {
+--navy: #1E3A8A;
+--orange: #F97316;
+--section-blue: #CFE1FF;
+--peach: #FDD5B9;
+}
+body { font-family:'Manrope',sans-serif; color:var(--navy); }
+h1,h2,h3,h4,h5,.fw-brand { font-weight:700; }
+.text-navy { color:var(--navy) !important; }
+.text-orange { color:var(--orange) !important; }
+.bg-orange { background-color:var(--orange) !important; }
+.bg-section-blue { background-color:var(--section-blue) !important; }
+.btn-orange { background-color:var(--orange); border-color:var(--orange); color:#fff; font-weight:600; }
+.btn-orange:hover { background-color:#ea670f; border-color:#ea670f; color:#fff; }
+.btn-outline-navy { border:1px solid rgba(255,255,255,.8); color:#fff; font-weight:600; }
+.btn-outline-navy:hover { background:#fff; color:var(--navy); }
+.navbar .nav-link { color:var(--navy); font-weight:600; letter-spacing:.02em; }
+.navbar .nav-link:hover { color:var(--orange); }
+
+.club { position:absolute; border-radius:50%; background:var(--peach); z-index:0; }
+
+.activity-card { border:1px solid var(--navy); border-radius:2px; padding:1.25rem; height:100%; background:#fff; }
+.activity-card .num { font-weight:700; font-size:1.1rem; padding-bottom:.6rem; margin-bottom:.75rem; }
+.activity-card h5 { font-size:1rem; font-weight:700; }
+.activity-card p { font-size:.85rem; margin-bottom:0; }
+
+.icon-circle { width:78px; height:78px; border-radius:50%; background:var(--section-blue); display:flex; align-items:center; justify-content:center; margin:0 auto 1rem; }
+.icon-circle i { font-size:1.6rem; color:var(--navy); }
+
+.cat-pill { border:1.5px solid var(--navy); border-radius:4px; padding:.5rem 1.1rem; font-weight:700; font-size:.85rem; background:#fff; color:var(--navy); text-decoration:none; display:inline-block; }
+.cat-pill.active { border-color:var(--orange); color:var(--orange); }
+.cat-pill small { display:block; font-weight:500; }
+
+.ulm-card { background:#fff; border-radius:2px; overflow:hidden; height:100%; display:flex; flex-direction:column; }
+.ulm-card .photo { height:230px; }
+.ulm-card .body { padding:1.25rem; flex:1; }
+.ulm-card .body h5 { font-weight:700; }
+.ulm-card .body p { font-size:.9rem; }
+.ulm-card .footer { padding:1rem 1.25rem; border-top:1px solid #d9e3f0; display:flex; justify-content:space-between; align-items:center; }
+.ulm-card .footer .price { font-weight:700; }
+
+.gallery-tile {
+    height:260px;
+    border-radius:2px;
+    overflow:hidden;
+}
+
+.gallery-tile { height:260px; border-radius:2px; overflow:hidden; }
+.pedago-photo { height:230px; border-radius:2px; overflow:hidden; margin-bottom:1.5rem; }
+.pedago-photo.small { height:150px; max-width:280px; }
+
+footer a { color:#fff; }
+.checklist li { position:relative; padding-left:1.4rem; margin-bottom:.5rem; }
+.checklist li::before { content:"–"; position:absolute; left:0; font-weight:700; color:var(--navy); }
+</style>
+
+
 <nav class="navbar navbar-expand-lg bg-white sticky-top py-3">
   <div class="container">
     <a class="navbar-brand" href="#accueil">
@@ -194,26 +252,50 @@
 
 <section id="galerie" class="py-5">
   <div class="container">
-    <p class="text-orange fw-bold text-uppercase text-center mb-4" style="letter-spacing:.05em;">Galerie</p>
+
+    <p class="text-orange fw-bold text-uppercase text-center mb-4"
+       style="letter-spacing:.05em;">
+       Galerie
+    </p>
+
     <div class="row g-3">
+
       <div class="col-md-4">
-        <div class="gallery-tile mosaic2 bg-g-glider"><div></div><div></div></div>
+        <img src="images/galerie-1.jpg"
+             class="img-fluid w-100 rounded"
+             alt="Photo de l'aéroclub">
       </div>
+
       <div class="col-md-4">
-        <div class="gallery-tile mosaic bg-g-aerial"><div></div><div></div><div></div><div></div></div>
+        <img src="images/galerie-2.jpg"
+             class="img-fluid w-100 rounded"
+             alt="Photo d'un ULM">
       </div>
+
       <div class="col-md-4">
-        <div class="gallery-tile bg-g-sunset"></div>
+        <img src="images/galerie-3.jpg"
+             class="img-fluid w-100 rounded"
+             alt="Photo du terrain">
       </div>
+
       <div class="col-md-4">
-        <div class="gallery-tile mosaic bg-g-redwhite"><div></div><div></div><div></div><div></div></div>
+        <img src="images/galerie-4.jpg"
+             class="img-fluid w-100 rounded"
+             alt="Photo d'un vol">
       </div>
+
       <div class="col-md-4">
-        <div class="gallery-tile mosaic bg-multiaxe"><div></div><div></div><div></div><div></div></div>
+        <img src="images/galerie-5.jpg"
+             class="img-fluid w-100 rounded"
+             alt="Photo d'un ULM">
       </div>
+
       <div class="col-md-4">
-        <div class="gallery-tile mosaic bg-autogire"><div></div><div></div><div></div><div></div></div>
+        <img src="images/galerie-6.jpg"
+             class="img-fluid w-100 rounded"
+             alt="Photo de l'aéroclub">
       </div>
+
     </div>
   </div>
 </section>
